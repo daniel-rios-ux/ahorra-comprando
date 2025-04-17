@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../assets/Logo.png'; // Asegúrate de que la ruta sea correcta
+import Logo from '../assets/Logo.png'; 
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -8,13 +8,13 @@ const Login = () => {
   const [name, setName] = useState('');
   const [lastName, setLastName] = useState('');
   const [phone, setPhone] = useState('');
-  const [userType, setUserType] = useState('cliente'); // Default to 'cliente'
+  const [userType, setUserType] = useState('cliente'); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isRegistered) {
       console.log('Iniciar sesión con:', { email, password });
-      // Aquí puedes agregar lógica para verificar el inicio de sesión
+      // lógica para verificar el inicio de sesión
     } else {
       console.log('Registrar cuenta con:', {
         name,
@@ -24,7 +24,7 @@ const Login = () => {
         userType,
         password,
       });
-      // Aquí puedes agregar lógica para registrar un nuevo usuario
+      // lógica para registrar un nuevo usuario
     }
   };
 
