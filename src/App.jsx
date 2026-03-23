@@ -9,7 +9,6 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Login />} />
-        {/* Agrega más rutas aquí */}
       </Routes>
     </Router>
   );
